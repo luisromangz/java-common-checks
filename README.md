@@ -6,22 +6,22 @@ To use in your Java project, just add the following repositories to your project
 
 ```
 <repository>
-     <id>emergya-check-style</id>
-     <url>http://nexus.emergya.es/nexus/content/repositories/emergya-check-style</url>
- </repository>
- <repository>
-     <id>emergya-check-style-snapshots</id>
-     <url>http://nexus.emergya.es/nexus/content/repositories/emergya-check-style-snapshots</url>
- </repository>
+  <id>emergya-check-style</id>
+  <url>http://nexus.emergya.es/nexus/content/repositories/emergya-check-style</url>
+</repository>
+<repository>
+  <id>emergya-check-style-snapshots</id>
+  <url>http://nexus.emergya.es/nexus/content/repositories/emergya-check-style-snapshots</url>
+</repository>
 ```
 
 and then the java-common-checks artifact as parent of the project (note that maven will complain somewhat):
 
 ```
 <parent>
-    <groupId>com.emergya</groupId>
-    <artifactId>java-common-checks</artifactId>
-    <version>0.1-SNAPSHOT</version>
+  <groupId>com.emergya</groupId>
+  <artifactId>java-common-checks</artifactId>
+  <version>0.1-SNAPSHOT</version>
 </parent>
 ```
 
