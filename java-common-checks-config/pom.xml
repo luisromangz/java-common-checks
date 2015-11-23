@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.emergya</groupId>
+        <artifactId>java-common-checks</artifactId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>java-common-checks-config</artifactId>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+    </build>
+    <distributionManagement>
+        <repository>
+            <id>emergya-check-style</id>
+            <url>http://nexus.emergya.es/nexus/content/repositories/emergya-check-style</url>
+        </repository>
+        <snapshotRepository>
+            <id>emergya-check-style-snapshots</id>
+            <url>http://nexus.emergya.es/nexus/content/repositories/emergya-check-style-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
